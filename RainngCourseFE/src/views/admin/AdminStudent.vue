@@ -163,7 +163,7 @@ export default {
         .then(res => {
           for (let i = 0; i < res.length; i++) {
             res[i].sex = res[i].sex === 1 ? "男" : "女";
-            res[i].id = (this.pageIndex - 1)*this.pageSize + i;
+            res[i].id = (this.pageIndex - 1)*this.pageSize + i + 1;
           }
           this.tableData = res;
         });

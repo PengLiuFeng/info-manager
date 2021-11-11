@@ -24,7 +24,7 @@ export const getPage = (index, majorName, className, name) =>
 
 export const listName = () => ajax.pureGet("/admin/student/names");
 
-export const pageSize = 20;
+export const pageSize = 10;
 
 export const exportStudentFile = (file) =>
   ajax.postFile("/admin/file/export/exportFile", {
