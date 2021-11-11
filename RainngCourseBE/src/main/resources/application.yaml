@@ -1,0 +1,24 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://82.157.139.80:3306/rainng_course?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: 123456
+  redis:
+    host: 39.106.83.86
+    port: 6379
+    password: 123456
+  session:
+    store-type: redis
+    timeout: 86400
+  jackson:
+    time-zone: Asia/Shanghai
+  main:
+    allow-bean-definition-overriding: true
+
+mybatis-plus:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.rainng.coursesystem.model
